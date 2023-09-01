@@ -1,0 +1,125 @@
+body {
+  background-color: gray;
+}
+
+p > b {
+  font-family: Cooper;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  padding: 5px;
+  color: white;
+}
+
+p {
+  padding: 10px;
+  border: 5px solid #000;
+  background-color: rgba(0, 255, 255, 0.147);
+  border-radius: 10px;
+}
+
+div > div > a:link {
+  font-family: serif;
+  font-size: 0.5em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 5px;
+  border-radius: 10px;
+}
+h1 {
+  font-family: serif;
+  font-size: 2em;
+}
+
+#container1 {
+  background-color: black;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+#container1-nav {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#container1-nav-link1 {
+  background-color: blue;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#container1-nav-link2 {
+  text-decoration: none;
+  font-size: 1em;
+}
+
+#logo > img {
+  padding: 15px;
+  margin: 15px;
+  width: 60%;
+  max-width: 400px;
+}
+
+#wind-speed {
+  color: red;
+}
+
+#date2 {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 1em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 3px;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
+#hxMap {
+  height: 500px;
+  max-width: 500px;
+  margin: 8px 0px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+#container2 {
+  text-align: center;
+  background-color: white;
+  line-height: 2em;
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-size: 1.25em;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#container3 {
+  background-color: black;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  
+}
+
+#container3-nav {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#container3-nav-link1 {
+  background-color: blue;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#container3-nav-link2 {
+  text-decoration: none;
+}
