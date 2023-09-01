@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  
+  <title>KIN's Weather Checker</title>
+  
+</head>
+
+<body>
+ 
+  <div id="container1">
+    
+	<h1>Weather Watcher</h1>
+
+   
+	<div id="logo">
+		<img id="logo-img" src="image-1.png" alt="weather icon">
+	</div>
+
+
+    <div id="container1-nav">
+      <a id="container1-nav-link1" href="/">Refresh</a>
+		  <br>
+		  <br>
+	  
+	  
+      <a id="container1-nav-link2" href="/weatherhx">Forecast History</a>
+    </div>
+	
+  </div>
+  
+  
+	<p id="container2">
+    
+		<b><span id="city"></span></b>, <b><span id="country">
+		</span></b>
+	   <img id="icon" />
+	   <br><b>Temperature:</b> 🌡️<span id="temp"></span>&deg
+	   <br><b>Hi Temp: ⬆️</b> <span id="temp_max"></span>&deg
+	   <br><b>Low Temp:</b>⬇️<span id="temp_min"></span>&deg
+	   <br><b>Humidity:</b> <span id="humidity"></span>&percnt;
+	   <br><em style="color:blue"><span id="summary">
+	   <br>
+	   </span> <b>feels like </b><span id="feels_like"></span>&deg with <span id="description"></span></em>
+	   <br> The wind is </b><span id="wind-speed" style="color:red"></span><b>mph 
+		
+		
+		<!-- <span id="aq_value"></span>
+		<span id="aq_units"></span> -->
+	</p>
+	
+	<div id="date2">
+	  <div id="date"><script>`${Date()}`</script></div>
+	</div>
+
+
+
+        <footer>
+          <code>Powered By</code> <a href="/">KIN</a><sup>&copy;</sup> <code>2015-2023</code>
+        </footer>
+
+
+		<!-- CHANGE NAME OF FILE -->
+      <script src="sketch.js"></script>
+	  
+</body>
+
+</html>
