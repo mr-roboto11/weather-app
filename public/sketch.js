@@ -1,4 +1,3 @@
-
 let lat, lon;
 if ('geolocation' in navigator) {
   console.log('Loading...');
