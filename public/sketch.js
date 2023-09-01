@@ -13,8 +13,8 @@ if ('geolocation' in navigator) {
       
 	  weather = json.weather;	  
       
-      document.getElementById('summary').textContent = weather.weather[0].main;
-      document.getElementById('description').textContent = weather.weather[0].description;
+      document.getElementById('summary').textContent = weather.weather.main;
+      document.getElementById('description').textContent = weather.weather.description;
       document.getElementById('city').textContent = weather.name;
       document.getElementById('country').textContent = weather.sys.country;
       document.getElementById('temp').textContent = weather.main.temp;
