@@ -26,18 +26,19 @@ if ('geolocation' in navigator) {
 
       startClock()
       async function startClock() {
-       setInterval(getTime(), 1000);
+       setInterval(getTime, 1000);
        function getTime() {
  
       const dateString = new Date().toLocaleString();
       date = dateString;
       document.getElementById('date').textContent = date;
        }
-  }      
+  }   
+     
 
     } catch (err) {
       console.error(err);
-      weather.weather.wind = { value: -1 };
+      weather.wind = { value: -1 };
       document.getElementById('aq-value').textContent = 'NO READING';
     }
 
