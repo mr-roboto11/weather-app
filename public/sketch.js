@@ -1,9 +1,9 @@
-// let lat, lon;
+let lat, lon;
 if ('geolocation' in navigator) {
   console.log('Loading...');
   navigator.geolocation.getCurrentPosition(async position => {
     let lat, lon;
-   
+    try {
       lat = position.coords.latitude;
       lon = position.coords.longitude;
 
@@ -22,7 +22,7 @@ if ('geolocation' in navigator) {
       document.getElementById('temp_max').textContent = weather.main.temp_max;
       document.getElementById('temp_min').textContent = weather.main.temp_min;
       document.getElementById('humidity').textContent = weather.main.humidity;
-      // document.getElementById('aq_value').textContent = weather.wind.speed;
+      document.getElementById('wind-speed').textContent = weather.wind.speed;
 
       startClock()
       async function startClock() {
@@ -36,11 +36,11 @@ if ('geolocation' in navigator) {
   }   
      
 
-    // catch (err) {
-    //   console.error(err);
-    //   weather.wind.speed = { value: -1 };
-    //   document.getElementById('aq-value').textContent = 'NO READING';
-    // }
+    } catch (lat) {
+      console.error(err);
+      weather.wind = { value: -1 };
+      document.getElementById('aq-value').textContent = 'NO READING';
+    }
 
     
     const data = { lat, lon, weather };
