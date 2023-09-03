@@ -38,7 +38,7 @@ if ('geolocation' in navigator) {
 
     } catch (err) {
       console.error(err);
-      weather.wind = { value: -1 };
+      weather.wind.speed = { value: -1 };
       document.getElementById('aq-value').textContent = 'NO READING';
     }
 
