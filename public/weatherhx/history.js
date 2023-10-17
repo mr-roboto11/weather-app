@@ -24,4 +24,5 @@ async function getData() {
 
     marker.bindPopup(txt);
   }
+  console.log(data)
 }
