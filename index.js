@@ -11,7 +11,7 @@ app.listen(port, () => {
   console.log(`Loading host ${port}`);
 });
 app.use(express.static('public'));
-app.use(express.json({ limit: '1mb' }));
+app.use(express.json({ limit: '200mb' }));
 
 const database = new Datastore('weather-history.db');
 database.loadDatabase();
