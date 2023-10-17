@@ -13,7 +13,7 @@ app.listen(port, () => {
 app.use(express.static('public'));
 app.use(express.json({ limit: '1mb' }));
 
-const database = new Datastore('weather-history.db');
+const database = new Datastore('weather-history.db', autoload);
 database.loadDatabase();
 
 app.get('/api', (request, response) => {
