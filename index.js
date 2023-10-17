@@ -39,8 +39,8 @@ app.get('/weather/:latlon', async (request, response) => {
   const latlon = request.params.latlon.split(',');
   const lat = latlon[0];
   const lon = latlon[1];
-  const api_key = process.env.API_KEY;
-  const weather_url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key}&units=imperial`;
+  // const api_key = process.env.API_KEY;
+  const weather_url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=imperial`;
   const weather_response = await fetch(weather_url);
   const weather_data = await weather_response.json();
 
